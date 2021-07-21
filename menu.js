@@ -1,3 +1,6 @@
+
+//점심메뉴 추천 챗봇
+
 const scriptName="menu.js"
 
 
