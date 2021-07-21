@@ -1,5 +1,4 @@
-//var can = "⎼".repeat(50);
-//var skip = "\u200b".repeat(500);
+//코로나 알림이 챗봇//
 
 function response(room, msg, sender, isGroupChat, replier, ImageDB) {
 
@@ -22,35 +21,6 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB) {
    var a14 = pa2.select("p.rssd_descript").get(1).text().replace(/\-/g,"").replace("호남권 3개 (광주, 전북, 전남)","").replace("경북권 2개 (대구, 경북)","")
    .replace("경남권 3개 (부산, 울산, 경남)","").replace("강원 1개 (강원)","").replace("제주 1개 (제주)","");
    
-   
-   //var a15 = pa2.select("step_map_city1 > h3").get(0).text();
-   //var a16 = pa2.select("step_map_city1 > h4").get(0).text();
-   //var a17 = pa2.select("step_map_city1.p").get(0).text(); // 단계 표시
-   //var a15 = a14.replace(/\r\n\t/g,"");                       //1.5단계
-   
-  /*  var a1 = pa2.select("h3.rssd_title_1").get(1).text(); // 서울
-	var a2 = pa2.select("h4.rssd_title_2").get(2).text();
-    
-	var a3 = pa2.select("h3.rssd_title_1").get(2).text(); // 부산
-	var a4 = pa2.select("h4.rssd_title_2").get(3).text();
-	
-	var a5 = pa2.select("h3.rssd_title_1").get(4).text(); //인천
-	var a6 = pa2.select("h4.rssd_title_2").get(5).text();
-	
-	var a7 = pa2.select("h3.rssd_title_1").get(6).text(); //대전
-	var a8 = pa2.select("h4.rssd_title_2").get(7).text();
-	
-	var a9 = pa2.select("h3.rssd_title_1").get(9).text(); //경기
-	var a10 = pa2.select("h4.rssd_title_2").get(10).text();
-   
-		var now = new Date();
-		var then = new Date("April 11,2021 09:00:00");
-		var gap = then.getTime()-now.getTime();
-		gapas = Math.floor((gap%(1000*60*60))/(1000*60)); //분
-		gapa = Math.floor((gap%(1000*60*60*24))/(1000*60*60)); //시
-		gap = Math.floor(gap/(1000*60*60*24));//일
-   
-   */
    
  
     replier.reply("[(아픔)코로나]"+d+"\n📍확진자 수: " +a+"명 ("+aa+"명)\nㄴ국내: +" 
