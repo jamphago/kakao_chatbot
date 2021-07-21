@@ -1,3 +1,6 @@
+
+//날씨정보 알림이 챗봇
+
 const scriptName = "test.js";
 
 
