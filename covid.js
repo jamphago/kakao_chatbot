@@ -11,7 +11,7 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB) {
     var aa = pa.select("p.inner_value").get(0).text().replace(" ","");
     var b = pa.select("p.inner_value").get(1).text();
     var c = pa.select("p.inner_value").get(2).text(); // 코로나 알림이
-    var d = pa.select("span.t_date").get(0).text();
+    //var d = pa.select("span.t_date").get(0).text();
    
    
    var a11 = pa2.select("h4.rssd_title_2").get(0).text();
@@ -27,9 +27,6 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB) {
 	+b+"명\n" + "ㄴ해외: +"+c+"명\n" + "[(소주)거리두기 현황]\n" + 
 	a11 + ": "+a12+"\n" +
 	a13 + ": "+"\n" +a14+"\n"+
-	//a5 + ": "+a6+"\n" +
-	//a7 + ": "+a8+"\n" +
-	//a9 + ": "+a10+"\n" +
 	"적용기간: ~2021/04/11\n [(그만)인이상 집합금지]\n 적용기간: ~2021/04/11");
 }
 }
