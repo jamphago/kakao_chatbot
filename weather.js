@@ -38,13 +38,10 @@ getWeatherInfo = (place) => {
 	  //  dailyResponse += "\n\n▷  " + String(dailyData.select(".date").text()).slice(0, 2).replace(/[0-9]/g, "") + " (" + String(dailyData.select(".date").select("span").text()).slice(0, -1) + ")"
 	    dailyResponse += "\n    ▸ 날씨 | " + dailyData.select(".weather_box").text();
         dailyResponse += "\n    ▸ 기온 | " + dailyData.select(".weather_temperature").first().text();
-        //dailyResponse += "\n    ▸ 최저 기온 | " + dailyData.select(".weather_temperature").get(1).text();
+        
     };
 
-   /* result = "[ " + npl + " 날씨 ]"+BLANK+"\n\n" + wt_summary + "\n\n현재온도 : " + nowTemp + "\n체감온도 : " + ct + "\n▼ 최저기온 : " + minTemp + " | ▲ 최고기온 : " + maxTemp + "\n\n미세먼지 : " 
-	+ dust_value + " [ " + dust_message + " ]\n초미세먼지 : " + small_dust_value + " [ " + small_dust_message + " ]\n\n자외선 : " + sun + " [ " + sunMessage + " ]\n
-	습도 : " + water + "% [ " + waterMessage + " ]\n\n강수 확률 : " + rainPercent + "%\n강수량 : " + rain + "mm\n\n바람 : " + windyValue + "m/s [ " + windyArrow + " ]\n\n[ 주간 날씨 ]" + dailyResponse;
-	*/  result = "[ " + npl + " 날씨 ]"+BLANK+"\n\n" + "미세먼지 : "+ dust_value + " [ " + dust_message + "]\n" + "초미세먼지 : " + small_dust_value + " [ " + small_dust_message + " ]\n\n자외선 : " + sun + " [ " + sunMessage + " ]\n"
+   result = "[ " + npl + " 날씨 ]"+BLANK+"\n\n" + "미세먼지 : "+ dust_value + " [ " + dust_message + "]\n" + "초미세먼지 : " + small_dust_value + " [ " + small_dust_message + " ]\n\n자외선 : " + sun + " [ " + sunMessage + " ]\n"
 	+"습도 : " + water + "% [ " + waterMessage + " ]\n\n강수 확률 : " + rainPercent + "%\n강수량 : " + rain + "mm\n\n바람 : " + windyValue + "m/s [ " + windyArrow + " ]\n\n"
 	+wt_summary + "\n\n현재온도 : " + nowTemp + "\n체감온도 : " + ct + "\n▼ 최저기온 : " + minTemp + " | ▲ 최고기온 : " + maxTemp + "]\n\n[ 주간 날씨 ]" + dailyResponse;
 	
